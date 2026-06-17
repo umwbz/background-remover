@@ -11,20 +11,16 @@ A FastAPI-based background removal service powered by U-2-Net. This API automati
 * Base64 encoded response
 * Supports PNG and JPG images
 
+
 ## Project Structure
 
 ```text
-.
-├── app.py
-├── u2net_model.py
-├── saved_models/
-│   └── u2net.pth
-├── U2Net/
-│   ├── model.py
-│   └── ...
-├── requirements.txt
-└── README.md
-```
+├── .gitattributes      # Configuration for Git LFS (Large File Storage)
+├── Dockerfile          # Docker configuration for containerizing the Python app
+├── README.md           # Project documentation and usage instructions
+├── app.py              # FastAPI application with background removal endpoint
+├── requirements.txt    # List of Python dependencies
+└── u2net_model.py      # U-2-Net model implementation for background removal
 
 ## Installation
 
